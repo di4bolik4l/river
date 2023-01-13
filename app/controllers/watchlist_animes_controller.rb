@@ -1,0 +1,2 @@
+class WatchlistAnimesController < ApplicationController
+end

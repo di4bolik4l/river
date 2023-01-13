@@ -1,0 +1,2 @@
+class WatchlistTvshowsController < ApplicationController
+end

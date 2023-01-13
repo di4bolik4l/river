@@ -32,7 +32,7 @@ function App() {
 		<div className="App">
 			<NavBar user={user} setUser={setUser} />
 
-			"Hello World, fuck off!"
+			"Hello World!"
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 				<Route exact path="/signup" element={<Signup onSignUp={setUser}/>}/>

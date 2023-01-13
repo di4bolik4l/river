@@ -18,14 +18,12 @@ class UsersController < ApplicationController
 		else 
 		render json:{error: 'Not authorized'} , status: :unauthorized
 		end
-	
 	end
 	
 	
 	private
 		def user_params
 			params.permit(:first_name, :last_name, :username, :password, :profile_pic, :email)
-	
 		end
 
 
