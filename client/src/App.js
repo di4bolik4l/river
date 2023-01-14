@@ -13,14 +13,10 @@ function App() {
   	// const [, ] = useState([]);
 
 	useEffect(() => {
-    async function fetchData() {
-		const response1 = await fetch('/me');
-		const user = await response1.json();
+		async function fetchData() {
+		const response = await fetch('/me');
+		const user = await response.json();
 		setUser(user);
-
-    //   const response2 = await fetch('/restaurants');
-    //   const restaurants = await response2.json();
-    //   setRestaurants(restaurants);
     }
     fetchData();
 	}, []);
@@ -36,7 +32,7 @@ function App() {
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 				<Route exact path="/signup" element={<Signup onSignUp={setUser}/>}/>
-				<Route exact path="/userlogin" element={<Login onLogin={setUser}/>}/>
+				<Route exact path="/login" element={<Login onLogin={setUser}/>}/>
 				<Route path="/logout" element={<Logout user={user} setUser = {setUser}/>}/>
 			</Routes>
 		</div>

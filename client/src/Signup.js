@@ -11,7 +11,7 @@ function SignUp({onSignUp}) {
   const [last_name, setLastName] = useState("")
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-console.log(errors)
+// console.log(errors)
 
 let navigate = useNavigate();
 
@@ -37,7 +37,7 @@ let navigate = useNavigate();
         navigate('/'));
       } else {
         r.json().then((err) => {
-          console.log(err)
+          // console.log(err)
           setErrors(err.errors) 
           
         });
