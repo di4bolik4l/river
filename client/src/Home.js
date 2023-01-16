@@ -1,9 +1,10 @@
 import React from 'react';
+import MainContainer from './MainContainer';
 
-function Home(props) {
+function Home({movie, setMovie}) {
     return (
         <div>
-            
+            <MainContainer movie={movie} setMovie={setMovie} />
         </div>
     );
 }

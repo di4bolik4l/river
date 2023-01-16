@@ -1,5 +1,6 @@
 WatchlistMovie.destroy_all
 Watchlist.destroy_all
+Movie.destroy_all
 User.destroy_all
 
 # CREATING USERS
