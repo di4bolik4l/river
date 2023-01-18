@@ -15,7 +15,11 @@ function MovieDetail({user}) {
             setMovieDetailObj(data))
     },[id])
     
-        console.log(movieDetailObj)
+    const handleAddMovie = () => {
+        console.log(":P")
+        // send post request with an {movie_id: movieDetailObj.id}
+        
+    }
 
     return (
         <div>
@@ -23,7 +27,7 @@ function MovieDetail({user}) {
             {movieDetailObj.title}
             <img src={movieDetailObj.img_url} alt="Movie Image" />
             </p>
-            
+            <button onClick={handleAddMovie}>ADD TO WATCHLIST</button>
         </div>
     );
 }

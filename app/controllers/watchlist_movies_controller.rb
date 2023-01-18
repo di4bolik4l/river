@@ -6,5 +6,28 @@ class WatchlistMoviesController < ApplicationController
         render json: current_users_movies, status: :ok
     end
 
+    def destroy
+        watchlist_movie = WatchlistMovie.find_by(id: params[:id])
+        if watchlist_movie
+            watchlist_movie.destroy
+            head :no_content
+        else
+            render json: { error: "Movie not on watchlist"}, status: :not_found
+        end
+    end
 
+    def create
+        watchlist_movie = WatchlistMovie.create(watchlist_movie_params)
+        if watchslist_movie.valid?
+            render json: watchlist_movie, status: :created
+        else
+            render json: { error: watchlist_movie.errors.full_messages}, status: :unprocessable_entity
+        end
+    end
+
+    private
+
+    def watchlist_movie_params
+        params.permit(:watchlist_id, :movie_id)
+    end
 end

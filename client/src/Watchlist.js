@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 function Watchlist({user}) {
 
     const [loggedInUserMovies, setLoggedInUserMovies] = useState([])
-    console.log(loggedInUserMovies)
+    // console.log(loggedInUserMovies)
     
 
     useEffect (() => {
@@ -20,7 +20,11 @@ function Watchlist({user}) {
 
     return (
         <div>
-            {loggedInUserMovies.map(watchListMovieObj => <WatchlistMovieCard key={watchListMovieObj.id} watchListMovieObj={watchListMovieObj} />)}
+            {loggedInUserMovies.map(watchListMovieObj => <WatchlistMovieCard key={watchListMovieObj.id} 
+                                                                            watchListMovieObj={watchListMovieObj}
+                                                                            loggedInUserMovies={loggedInUserMovies}
+                                                                            setLoggedInUserMovies={setLoggedInUserMovies}
+                                                                            />)}
         </div>
     );
 }
