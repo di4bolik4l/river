@@ -1,5 +1,4 @@
 import React from 'react';
-import MovieDetail from './MovieDetail';
 import { Link } from "react-router-dom";
 
 
@@ -28,12 +27,9 @@ function WatchlistMovieCard({watchListMovieObj,loggedInUserMovies, setLoggedInUs
         
         <div className="flex flex-wrap gap-2">
             <Link to={`/movies/${watchListMovieObj.movie.id}`}>
-                <img className="movie-image" src={watchListMovieObj.movie.img_url} alt='Movie Title' />
+                <img className="movie-image" src={watchListMovieObj.movie.img_url} alt={watchListMovieObj.title} />
             </Link>
             <button onClick={handleRemoveMovie}>REMOVE</button>
-            
-            
-            {/* <MovieDetail movieObj={watchListMovieObj.movie} /> */}
         </div>
 
     );

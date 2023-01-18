@@ -14,10 +14,17 @@ function MovieDetail({user}) {
         .then(data => 
             setMovieDetailObj(data))
     },[id])
+
+    console.log(movieDetailObj)
     
-    const handleAddMovie = () => {
-        console.log(":P")
-        // send post request with an {movie_id: movieDetailObj.id}
+    const handleAddMovie = (e) => {
+        fetch('/watchlist_movies', {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({movie_id: movieDetailObj.id})
+        })
+        .then(r => r.json())
+        .then(console.log)
         
     }
 
@@ -25,7 +32,7 @@ function MovieDetail({user}) {
         <div>
             <p>
             {movieDetailObj.title}
-            <img src={movieDetailObj.img_url} alt="Movie Image" />
+            <img src={movieDetailObj.img_url} alt={movieDetailObj.title} />
             </p>
             <button onClick={handleAddMovie}>ADD TO WATCHLIST</button>
         </div>
