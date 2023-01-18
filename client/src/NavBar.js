@@ -19,7 +19,7 @@ function NavBar({user}) {
                 <NavLink to='search'>Search</NavLink>
                 {user ?
                 <>
-
+                <NavLink to='/movies'>Movies</NavLink>
                 <NavLink to={`/watchlist/${user.id}`}>Watchlist</NavLink>
                 <NavLink to='/logout'>Logout</NavLink>
                 </> :
