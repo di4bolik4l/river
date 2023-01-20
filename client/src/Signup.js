@@ -29,6 +29,8 @@ let navigate = useNavigate();
         password,
         password_confirmation: passwordConfirmation,
         profile_pic: profile_pic,
+        email
+
       }),
     }).then((r) => {
       setIsLoading(false);
@@ -37,7 +39,7 @@ let navigate = useNavigate();
         navigate('/'));
       } else {
         r.json().then((err) => {
-          // console.log(err)
+          console.log(err)
           setErrors(err.errors) 
           
         });

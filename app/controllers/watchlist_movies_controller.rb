@@ -21,7 +21,7 @@ class WatchlistMoviesController < ApplicationController
         current_user_watchlist = @current_user.watchlist
         params[:watchlist_id] = current_user_watchlist.id
         watchlist_movie = WatchlistMovie.create(watchlist_movie_params)
-        if watchlist_movie.valid?
+        if watchcdlist_movie.valid?
             render json: watchlist_movie, status: :created
         else
             render json: { error: watchlist_movie.errors.full_messages}, status: :unprocessable_entity

@@ -6,7 +6,7 @@ import logo_image from './RiverLogo.png';
 
 function NavBar({user}) {
 
-  // const [loggedIn, setLoggedIn] = useState(false);
+
 
 
     return (
@@ -19,6 +19,7 @@ function NavBar({user}) {
                 <NavLink to='search'>Search</NavLink>
                 {user ?
                 <>
+                <NavLink to={`/profile/${user.id}`}>Profile</NavLink>
                 <NavLink to='/movies'>Movies</NavLink>
                 <NavLink to={`/watchlist/${user.id}`}>Watchlist</NavLink>
                 <NavLink to='/logout'>Logout</NavLink>

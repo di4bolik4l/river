@@ -2,6 +2,10 @@ WatchlistMovie.destroy_all
 Watchlist.destroy_all
 Movie.destroy_all
 User.destroy_all
+Admin.destroy_all
+
+#CREATING ADMIN
+admin1 = Admin.create(username: )
 
 # CREATING USERS
 puts "Creating User"
@@ -107,6 +111,7 @@ puts "Creating Watchlists"
 user1_watchlist = Watchlist.create(user_id: user1.id)
 user2_watchlist = Watchlist.create(user_id: user2.id)
 user3_watchlist = Watchlist.create(user_id: user3.id)
+user4_watchlist = Watchlist.create(user_id: user4.id)
 
 puts "Watchlists Seeded"
 
