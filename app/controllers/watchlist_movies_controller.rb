@@ -33,4 +33,5 @@ class WatchlistMoviesController < ApplicationController
     def watchlist_movie_params
         params.permit(:watchlist_id, :movie_id)
     end
+    
 end

@@ -14,14 +14,5 @@ class MoviesController < ApplicationController
             render json: { error: "Movie not found" }, status: :not_found
         end
     end
+    
 end
-
-
-# def show
-#     experience = Experience.find_by_id(params[:id])
-#         if experience
-#             render json: experience
-#         else
-#             render json: { error: "Experience not found" }, status: :not_found
-#         end
-# end

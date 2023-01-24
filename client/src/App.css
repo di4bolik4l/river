@@ -2,7 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.App {
+    background: #ff9f64;
+    height: 100vh
+}
+
 .movie-image {
+    height: 300px;
+    width: 175px;
+}
+
+.tv-show-image {
+    height: 300px;
+    width: 175px;
+}
+
+.anime-image {
     height: 300px;
     width: 175px;
 }

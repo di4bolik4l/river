@@ -27,6 +27,10 @@ ActiveRecord::Schema.define(version: 2023_01_20_002150) do
     t.string "cast_member_1"
     t.string "cast_member_2"
     t.string "cast_member_3"
+    t.string "netflix"
+    t.string "prime"
+    t.string "hulu"
+    t.string "crunchyroll"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -58,6 +62,10 @@ ActiveRecord::Schema.define(version: 2023_01_20_002150) do
     t.string "cast_member_1"
     t.string "cast_member_2"
     t.string "cast_member_3"
+    t.string "netflix"
+    t.string "prime"
+    t.string "hulu"
+    t.string "crunchyroll"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
