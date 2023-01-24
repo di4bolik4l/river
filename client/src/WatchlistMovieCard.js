@@ -24,7 +24,7 @@ function WatchlistMovieCard({watchListMovieObj, loggedInUserMovies, setLoggedInU
     }
 
     return (
-        <div className="flex w-7/8">
+        <div className="flex w-7/8 my-5">
             <div className="flex flex-col gap-2">
                 <Link to={`/movies/${watchListMovieObj.movie.id}`}>
                     <img className="movie-image" src={watchListMovieObj.movie.img_url} alt={watchListMovieObj.title} />

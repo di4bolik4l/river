@@ -41,21 +41,21 @@ function Watchlist({user}) {
 
     return (
         <div>
-            <div className="grid grid-cols-5">
+            <div className="grid grid-cols-8">
             {loggedInUserMovies.map(watchListMovieObj => <WatchlistMovieCard key={watchListMovieObj.id} 
                                                                             watchListMovieObj={watchListMovieObj}
                                                                             loggedInUserMovies={loggedInUserMovies}
                                                                             setLoggedInUserMovies={setLoggedInUserMovies}
                                                                             />)}
             </div>
-            <div>
+            <div className="grid grid-cols-8">
             {loggedInUserTvShows.map(watchListTvShowObj => <WatchlistTvShowCard key={watchListTvShowObj.id} 
                                                                             watchListTvShowObj={watchListTvShowObj}
                                                                             loggedInUserTvShows={loggedInUserTvShows}
                                                                             setLoggedInUserTvShows={setLoggedInUserTvShows}
                                                                             />)}
             </div>
-            <div>
+            <div className="grid grid-cols-8">
             {loggedInUserAnimes.map(watchListAnimeObj => <WatchlistAnimeCard key={watchListAnimeObj.id} 
                                                                             watchListAnimeObj={watchListAnimeObj}
                                                                             loggedInUserAnimes={loggedInUserAnimes}
