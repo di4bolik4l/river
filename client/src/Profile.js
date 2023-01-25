@@ -45,11 +45,11 @@ function Profile({user, setUser, update, setUpdate}) {
 
     return (
         <div>
-            <div className="flex flex-col items-center pb-10">
+            <div className="flex flex-col items-center pb-10 my-8">
                 <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src={user.profile_pic} alt={user.username}/>
-                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">{user.first_name} {user.last_name}</h5>
-                <span className="text-lg text-violet-800 dark:text-gray-400">{user.username}</span>
-                <span className="text-lg text-violet-800 dark:text-gray-400">{user.email}</span>
+                <h5 className="mb-1 text-xl font-semibold text-gray-900">{user.first_name} {user.last_name}</h5>
+                <span className="mb-3 text-lg font-semibold text-pink-800 md:text-xl">{user.username}</span>
+                <span className="mb-3 text-lg font-semibold text-pink-800 md:text-xl">{user.email}</span>
             </div>
                 
             <div className="flex flex-col items-center pb-10">
