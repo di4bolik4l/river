@@ -37,7 +37,7 @@ function Login({ onLogin }) {
 
 	return (
 		<div className="flex flex-col items-center pb-10">
-			<img src={logo_image} />
+			<img src={logo_image} alt="logo"/>
 			<form  className="login-form" onSubmit={handleSubmit}>
 				<div class="grid gap-6 mb-6 md:grid-cols-2">
 					<div>

@@ -326,7 +326,7 @@ reacher = TvShow.create(
 
 peaky_blinders = TvShow.create(
                         title: "Peaky Blinders",
-                        img_url: "https://m.media-amazon.com/images/M/MV5BZjYzZDgzMmYtYjY5Zi00YTk1LThhMDYtNjFlNzM4MTZhYzgyXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_.jpg",
+                        img_url: "https://flxt.tmsimg.com/assets/p10182741_b_v8_aa.jpg",
                         genre: "Period Piece",
                         description: "Britain is a mixture of despair and hedonism in 1919 in the aftermath of the Great War. Returning soldiers, newly minted revolutions and criminal gangs are fighting for survival in a nation rocked by economic upheaval.",
                         cast: "",
@@ -376,7 +376,7 @@ puts "Creating Anime"
 
 naruto = Anime.create(
                     title: "Naruto",
-                    img_url: "https://flxt.tmsimg.com/assets/p9161972_b_v9_aa.jpg",
+                    img_url: "https://flxt.tmsimg.com/assets/p194893_b_v8_ac.jpg",
                     description: "It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.",
                     cast: "",
                     cast_member_1: "",
@@ -390,7 +390,7 @@ naruto = Anime.create(
 
 naruto_shippuden = Anime.create(
                     title: "Naruto Shippuden",
-                    img_url: "https://m.media-amazon.com/images/M/MV5BZGFiMWFhNDAtMzUyZS00NmQ2LTljNDYtMmZjNTc5MDUxMzViXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+                    img_url: "https://m.media-amazon.com/images/I/81qb4I6rbsL._AC_UF894,1000_QL80_.jpg",
                     description: "Naruto Uzumaki wants to be the best ninja in the land. He's done well so far, but with the looming danger posed by the mysterious Akatsuki organization, Naruto knows he must train harder than ever and leaves his village for intense exercises that will push him to his limits.",
                     cast: "",
                     cast_member_1: "",
@@ -404,7 +404,7 @@ naruto_shippuden = Anime.create(
 
 my_hero_academia = Anime.create(
                     title: "My Hero Academia",
-                    img_url: "https://cdn.myanimelist.net/images/about_me/ranking_items/11121751-2305c5e2-05a6-4178-80b7-9c690574e3f2.jpg?t=1673145154",
+                    img_url: "https://i5.walmartimages.com/asr/dbfa1441-3df7-4650-9d91-53c0754b09f5_1.ce1524700470881c8c536d22fb122c3d.jpeg",
                     description: "Izuku has dreamt of being a hero all his life—a lofty goal for anyone, but especially challenging for a kid with no superpowers. That’s right, in a world where eighty percent of the population has some kind of super-powered “quirk,” Izuku was unlucky enough to be born completely normal. But that’s not enough to stop him from enrolling in one of the world’s most prestigious hero academies.",
                     cast: "",
                     cast_member_1: "",
@@ -432,7 +432,7 @@ chainsaw_man = Anime.create(
 
 attack_on_titan = Anime.create(
                     title: "Attack on Titan",
-                    img_url: "https://m.media-amazon.com/images/M/MV5BMGY3Mzg3M2UtNzYxNi00ZDYzLTlhMTQtMjkzZTA2MWQ4NjA0XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+                    img_url: "https://flxt.tmsimg.com/assets/p10701949_b_v8_ah.jpg",
                     description: "Known in Japan as Shingeki no Kyojin, many years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the heroic members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!",
                     cast: "",
                     cast_member_1: "",
@@ -502,7 +502,7 @@ revenger = Anime.create(
 
 black_clover = Anime.create(
                     title: "Black Clover",
-                    img_url: "https://m.media-amazon.com/images/M/MV5BN2FlYjYxMTMtZGQzYy00OWU2LTkyYWMtNWJhODhmZmM0N2FhXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+                    img_url: "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/e108ae17d8d0407417cac40eb52d849a.jpe",
                     description: "In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!",
                     cast: "",
                     cast_member_1: "",
